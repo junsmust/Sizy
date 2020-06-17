@@ -22,7 +22,7 @@ class ApplicationCoordinator: Coordinatable{
     }
 }
 
-class MainCoordinator: Coordinatable, SignUpCoordinator{
+class MainCoordinator: Coordinatable{
   
     private var navigationController: UINavigationController
     

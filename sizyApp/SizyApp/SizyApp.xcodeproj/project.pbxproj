@@ -63,8 +63,8 @@
 		BFEF55F32490EF7C00478861 /* checkFitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFEF55F12490EF7C00478861 /* checkFitVC.xib */; };
 		BFEF55F62497C6F100478861 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF55F52497C6F100478861 /* Coordinatable.swift */; };
 		BFEF55F82497C72600478861 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF55F72497C72600478861 /* ApplicationCoordinator.swift */; };
-		BFEF55FB2497CA9F00478861 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF55FA2497CA9F00478861 /* SignUpCoordinator.swift */; };
 		BFEF55FE2497CB5100478861 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF55FD2497CB5100478861 /* SignUpCoordinator.swift */; };
+		BFEF5601249A337800478861 /* FitCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF5600249A337800478861 /* FitCategoryView.swift */; };
 		E0C893D8D505DD5932DE7161 /* Pods_SizyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1F11E3B300E6F1737E555E /* Pods_SizyAppTests.framework */; };
 		F07B5559558264C28DEC5943 /* Pods_SizyApp_SizyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE508E68A66DC94C14E595FE /* Pods_SizyApp_SizyAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -156,8 +156,8 @@
 		BFEF55F12490EF7C00478861 /* checkFitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = checkFitVC.xib; sourceTree = "<group>"; };
 		BFEF55F52497C6F100478861 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
 		BFEF55F72497C72600478861 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
-		BFEF55FA2497CA9F00478861 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		BFEF55FD2497CB5100478861 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		BFEF5600249A337800478861 /* FitCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitCategoryView.swift; sourceTree = "<group>"; };
 		FE508E68A66DC94C14E595FE /* Pods_SizyApp_SizyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SizyApp_SizyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -505,6 +505,7 @@
 		BFDF70C3248B719300AB1001 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BFEF55FF249A336100478861 /* fitCategory */,
 				BFD5B139245A95E4008BA770 /* LaunchScreen.storyboard */,
 			);
 			path = view;
@@ -551,7 +552,6 @@
 			children = (
 				BFEF55FC2497CB3800478861 /* coordinatorProtocol */,
 				BFEF55F72497C72600478861 /* ApplicationCoordinator.swift */,
-				BFEF55FA2497CA9F00478861 /* SignUpCoordinator.swift */,
 			);
 			path = coordinator;
 			sourceTree = "<group>";
@@ -562,6 +562,14 @@
 				BFEF55FD2497CB5100478861 /* SignUpCoordinator.swift */,
 			);
 			path = coordinatorProtocol;
+			sourceTree = "<group>";
+		};
+		BFEF55FF249A336100478861 /* fitCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BFEF5600249A337800478861 /* FitCategoryView.swift */,
+			);
+			path = fitCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -846,9 +854,9 @@
 				BFD5B12E245A95DC008BA770 /* SceneDelegate.swift in Sources */,
 				BFDF70B724814EDB00AB1001 /* CategoryVC.swift in Sources */,
 				BFA2645E24670E01002BE213 /* UserInfoVC.swift in Sources */,
-				BFEF55FB2497CA9F00478861 /* SignUpCoordinator.swift in Sources */,
 				BFDF70C924909A5D00AB1001 /* InputSizeVC.swift in Sources */,
 				BFD5B179245AC4C1008BA770 /* Line.swift in Sources */,
+				BFEF5601249A337800478861 /* FitCategoryView.swift in Sources */,
 				BFDF70BC2481503400AB1001 /* CategoryCell.swift in Sources */,
 				BFD5B175245AC239008BA770 /* ARSCNView.swift in Sources */,
 				BF791B88246AC38B00B55A4F /* User.swift in Sources */,

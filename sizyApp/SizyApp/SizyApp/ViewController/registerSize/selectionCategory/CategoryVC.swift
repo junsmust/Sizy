@@ -25,7 +25,7 @@ class CategoryVC: UIViewController {
     
     private lazy var subCollectionView: UICollectionView! = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .vertical
+        flowLayout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.backgroundColor = .clear
         collectionView.register(UINib(nibName: AppCells.SubCategoryCell.rawValue, bundle: nil), forCellWithReuseIdentifier: AppCells.SubCategoryCell.rawValue)
@@ -108,7 +108,7 @@ extension CategoryVC{
             categoryCollectionView.topAnchor.constraint(equalTo: mainDescriptionLb.bottomAnchor,constant: 10),
             categoryCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 30),
             categoryCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -30),
-            categoryCollectionView.heightAnchor.constraint(equalToConstant: 220)
+            categoryCollectionView.heightAnchor.constraint(equalToConstant: 140)
         ])
     }
     private func setupSubDescriptionLb(){
@@ -124,7 +124,7 @@ extension CategoryVC{
             subCollectionView.topAnchor.constraint(equalTo: subDescriptionLb.bottomAnchor,constant: 10),
             subCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 30),
             subCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -30),
-            subCollectionView.bottomAnchor.constraint(equalTo: nextBtnView.topAnchor, constant: -40)
+            subCollectionView.bottomAnchor.constraint(equalTo: nextBtnView.topAnchor, constant: -20)
         ])
     }
     private func setupNextBtnView(){
