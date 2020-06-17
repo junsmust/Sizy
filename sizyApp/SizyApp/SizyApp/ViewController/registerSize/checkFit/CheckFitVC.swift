@@ -10,8 +10,11 @@ import UIKit
 
 class CheckFitVC: UIViewController {
 
+    let fitCategoryView = FitCategoryView()
+    
     override func loadView() {
-        
+        view = fitCategoryView
+        view.backgroundColor = .white
     }
     override func viewDidLoad() {
         super.viewDidLoad()

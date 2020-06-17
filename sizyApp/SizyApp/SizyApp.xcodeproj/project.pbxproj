@@ -65,6 +65,8 @@
 		BFEF55F82497C72600478861 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF55F72497C72600478861 /* ApplicationCoordinator.swift */; };
 		BFEF55FE2497CB5100478861 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF55FD2497CB5100478861 /* SignUpCoordinator.swift */; };
 		BFEF5601249A337800478861 /* FitCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF5600249A337800478861 /* FitCategoryView.swift */; };
+		BFEF5608249A5E1A00478861 /* FitCategoryDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF5607249A5E1A00478861 /* FitCategoryDatasource.swift */; };
+		BFEF560A249A5F1100478861 /* Fit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF5609249A5F1100478861 /* Fit.swift */; };
 		E0C893D8D505DD5932DE7161 /* Pods_SizyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1F11E3B300E6F1737E555E /* Pods_SizyAppTests.framework */; };
 		F07B5559558264C28DEC5943 /* Pods_SizyApp_SizyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE508E68A66DC94C14E595FE /* Pods_SizyApp_SizyAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -158,6 +160,8 @@
 		BFEF55F72497C72600478861 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		BFEF55FD2497CB5100478861 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		BFEF5600249A337800478861 /* FitCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitCategoryView.swift; sourceTree = "<group>"; };
+		BFEF5607249A5E1A00478861 /* FitCategoryDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitCategoryDatasource.swift; sourceTree = "<group>"; };
+		BFEF5609249A5F1100478861 /* Fit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fit.swift; sourceTree = "<group>"; };
 		FE508E68A66DC94C14E595FE /* Pods_SizyApp_SizyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SizyApp_SizyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -278,6 +282,7 @@
 			children = (
 				BFA3E3262479601900D17F5F /* Size.swift */,
 				BFDF70C4248CCEF600AB1001 /* SizeDemo.swift */,
+				BFEF5609249A5F1100478861 /* Fit.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -567,9 +572,18 @@
 		BFEF55FF249A336100478861 /* fitCategory */ = {
 			isa = PBXGroup;
 			children = (
+				BFEF5606249A5DF500478861 /* collectionDatasource */,
 				BFEF5600249A337800478861 /* FitCategoryView.swift */,
 			);
 			path = fitCategory;
+			sourceTree = "<group>";
+		};
+		BFEF5606249A5DF500478861 /* collectionDatasource */ = {
+			isa = PBXGroup;
+			children = (
+				BFEF5607249A5E1A00478861 /* FitCategoryDatasource.swift */,
+			);
+			path = collectionDatasource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -840,6 +854,7 @@
 				BFA3E32B2479623F00D17F5F /* MainCategoryCell.swift in Sources */,
 				BFD5B12C245A95DC008BA770 /* AppDelegate.swift in Sources */,
 				BFDF70C024817A9800AB1001 /* SubCategoryCell.swift in Sources */,
+				BFEF560A249A5F1100478861 /* Fit.swift in Sources */,
 				BFD5B181245B39E1008BA770 /* AppImages.swift in Sources */,
 				BFA51BE824645ADB0095E077 /* AlertMessages.swift in Sources */,
 				BFA51BF1246700060095E077 /* CompleteSignupVC.swift in Sources */,
@@ -853,6 +868,7 @@
 				BF791B86246AC21B00B55A4F /* AlertService.swift in Sources */,
 				BFD5B12E245A95DC008BA770 /* SceneDelegate.swift in Sources */,
 				BFDF70B724814EDB00AB1001 /* CategoryVC.swift in Sources */,
+				BFEF5608249A5E1A00478861 /* FitCategoryDatasource.swift in Sources */,
 				BFA2645E24670E01002BE213 /* UserInfoVC.swift in Sources */,
 				BFDF70C924909A5D00AB1001 /* InputSizeVC.swift in Sources */,
 				BFD5B179245AC4C1008BA770 /* Line.swift in Sources */,

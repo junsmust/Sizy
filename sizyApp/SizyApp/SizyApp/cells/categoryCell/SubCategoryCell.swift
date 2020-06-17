@@ -15,7 +15,8 @@ class SubCategoryCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         basedView.layer.cornerRadius = 10.0
-        
+        basedView.layer.borderWidth = 1.0
+        basedView.layer.borderColor = UIColor(displayP3Red: 1/255, green: 1/255, blue: 1/255, alpha: 1.0).cgColor
         subLabel.highlightedTextColor = .brown
     }
 
