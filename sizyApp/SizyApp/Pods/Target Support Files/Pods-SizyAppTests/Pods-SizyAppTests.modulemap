@@ -1,6 +1,0 @@
-framework module Pods_SizyAppTests {
-  umbrella header "Pods-SizyAppTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
